@@ -1,0 +1,103 @@
+* {
+  list-style-type: none;
+}
+body {
+  overflow: hidden;
+
+  background: #16222a;
+  background: linear-gradient(to right, #3a6073, #16222a);
+  height: 100vh;
+  font-family: "Century Gothic";
+  text-align: center;
+  color: white;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: none;
+  border: 2px solid #3a6073;
+  box-shadow: 0 0 3px #3a6073;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+}
+#connexion form {
+  border: 2px solid #3a6073;
+  box-shadow: inset 0 0 10px #3a6073;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  background: #3a6073;
+  width: 200px;
+  align-self: center;
+  border: none;
+  color: white;
+  transition: 0.4s ease;
+}
+input[type="text"],
+input[type="password"] {
+  text-align: center;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  margin: 15px 0 15px 0;
+  outline: none;
+}
+input[type="submit"] {
+  margin: 20px;
+  padding: 20px 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  box-shadow: inset -1px -4px 200px #16222a;
+  transform: scale(1.05);
+  cursor: pointer;
+  /* color: #3a6073; */
+}
+input:focus {
+  box-shadow: 0 0 15px #658595;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.menu a {
+  color: white;
+  text-shadow: 2px 2px 0 black;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.menu a:hover {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 0 0 10px rgb(145, 98, 98);
+}
+
+.credit {
+  font-size: 0.8rem;
+}
+.menu a:hover,
+.active {
+  background: rgba(0, 0, 0, 0.669);
+  padding: 15px;
+  border-radius: 20px;
+}
+.active {
+  color: #86a2b0 !important;
+}
+.pseudo,
+#countdown {
+  color: green;
+}
+#countdown {
+  font-weight: bolder;
+}
